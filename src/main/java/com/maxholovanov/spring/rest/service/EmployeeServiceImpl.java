@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-//Перенаправляет всю работу в репозиторий employeeDAO, а тот в свою очередть работает с базой данных
+//Перенаправляет всю работу в репозиторий employeeDAO, а тот в свою очередть работает с базой данынх
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
 

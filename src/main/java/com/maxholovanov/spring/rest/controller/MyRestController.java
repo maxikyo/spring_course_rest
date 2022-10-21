@@ -38,6 +38,28 @@ public class MyRestController {
         return employee;
     }
 
+    @PostMapping("/employees")
+    public Employee addNewEmployee(@RequestBody Employee employee){
 
+        employeeService.saveEmployee(employee);
+
+        return employee;
+    }
+
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee employee){
+
+        employeeService.saveEmployee(employee);
+
+        return employee;
+    }
+
+    @DeleteMapping("/employees/{id}")
+    public String deleteEmployee(@PathVariable int id){
+
+        employeeService.deleteInfo(id);
+
+        return "Employee with ID = " + id + "was deleted";
+    }
 
 }
